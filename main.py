@@ -1,7 +1,6 @@
 import os
 import asyncio
 from telethon import TelegramClient, events
-from googletrans import Translator
 
 api_id = int(os.getenv("API_ID"))
 api_hash = os.getenv("API_HASH")
