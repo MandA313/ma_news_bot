@@ -10,7 +10,6 @@ source_channels = os.getenv("SOURCE_CHANNELS").split(",")
 target_channel = os.getenv("TARGET_CHANNEL")
 
 client = TelegramClient("bot_session", api_id, api_hash).start(bot_token=bot_token)
-translator = Translator()
 
 @client.on(events.NewMessage(chats=source_channels))
 async def handler(event):
